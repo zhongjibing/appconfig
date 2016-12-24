@@ -1,0 +1,8 @@
+[user]
+	name = zhongjibing
+	email = zhongjibing@163.com
+[push]
+    default = matching
+[core]
+	excludesfile = .gitignore_global
+
