@@ -158,6 +158,12 @@ under the License.
     </mirror>
      -->
     <mirror>
+        <id>alimaven</id>
+        <name>aliyun maven</name>
+        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        <mirrorOf>central</mirrorOf>        
+    </mirror>
+    <mirror>
         <id>central</id>
         <name>Maven central plugin mirror</name>
         <url>http://repo1.maven.org/maven2/</url>
