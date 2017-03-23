@@ -5,6 +5,8 @@ Required Software
   ssh
   pdsh
 
+pdsh rpm: https://pkgs.org/download/pdsh
+
 Download and unpack the downloaded Hadoop distribution. In the distribution, edit the file etc/hadoop/hadoop-env.sh to define some parameters as follows:
   # set to the root of your Java installation
   export JAVA_HOME=/usr/java/latest
