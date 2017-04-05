@@ -3,3 +3,7 @@ vim 配置文件路径
 vimrc               /etc
 bmichaelsen.vim     /usr/share/vim/vim74/colors
 
+
+vim colorschema 自定义下载:
+http://bytefluent.com/vivify/
+
