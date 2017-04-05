@@ -1,0 +1,5 @@
+vim 配置文件路径
+
+vimrc               /etc
+bmichaelsen.vim     /usr/share/vim/vim74/colors
+
