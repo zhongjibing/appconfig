@@ -1,0 +1,21 @@
+CentOS Docker 安装
+
+Docker 运行在 CentOS 7 上，要求系统为64位、系统内核版本为 3.10 以上
+
+安装docker
+# yum -y install docker
+
+启动docker后台服务
+# service docker start
+
+测试运行hello-world
+# docker run hello-world
+
+
+镜像加速
+新版的 Docker 使用 /etc/docker/daemon.json（Linux） 或者 %programdata%\docker\config\daemon.json（Windows） 来配置 Daemon。
+
+在该配置文件中加入(网易镜像地址):
+{
+  "registry-mirrors": ["http://hub-mirror.c.163.com"]
+}

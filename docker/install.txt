@@ -1,0 +1,44 @@
+#Prerequisites
+
+##OS requirements
+To install Docker, you need the 64-bit version of CentOS 7.
+
+##Remove unofficial Docker packages
+$ sudo yum -y remove docker docker-common container-selinux
+$ sudo yum -y remove docker-selinux
+
+
+#Install Docker
+
+##Install using the repository
+Before you install Docker for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install, update, or downgrade Docker from the repository.
+
+Set up the repository
+1. Install yum-utils, which provides the yum-config-manager utility:
+$ sudo yum install -y yum-utils
+2. Use the following command to set up the stable repository:
+$ sudo yum-config-manager --add-repo https://docs.docker.com/v1.13/engine/installation/linux/repo_files/centos/docker.repo
+3. Optional: Enable the testing repository. This repository is included in the docker.repo file above but is disabled by default. You can enable it alongside the stable repository. Do not use unstable repositories on on production systems or for non-testing workloads.
+$ sudo yum-config-manager --enable docker-testing
+You can disable the testing repository by running the yum-config-manager command with the --disable flag. To re-enable it, use the --enable flag. The following command disables the testing repository.
+$ sudo yum-config-manager --disable docker-testing
+
+Install Docker
+1. Update the yum package index.
+$ sudo yum makecache fast
+2. Install the latest version of Docker, or go to the next step to install a specific version.
+$ sudo yum -y install docker-engine
+3. On production systems, you should install a specific version of Docker instead of always using the latest. List the available versions. This example uses the sort -r command to sort the results by version number, highest to lowest, and is truncated.
+$ yum list docker-engine.x86_64  --showduplicates |sort -r
+
+docker-engine.x86_64  1.13.0-1.el7                               docker-main
+docker-engine.x86_64  1.12.5-1.el7                               docker-main   
+docker-engine.x86_64  1.12.4-1.el7                               docker-main   
+docker-engine.x86_64  1.12.3-1.el7                               docker-main 
+
+$ sudo yum -y install docker-engine-<VERSION_STRING>
+
+4. Start Docker.
+$ sudo systemctl start docker
+5. Verify that docker is installed correctly by running the hello-world image.
+$ sudo docker run hello-world
