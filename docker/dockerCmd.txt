@@ -1,400 +1,400 @@
-1. ÏÔÊ¾ Docker °æ±¾ÐÅÏ¢
+1. æ˜¾ç¤º Docker ç‰ˆæœ¬ä¿¡æ¯
 docker version [OPTIONS]
 
-OPTIONSËµÃ÷£º
-    -f :Ö¸¶¨·µ»ØÖµµÄÄ£°åÎÄ¼þ¡£
+OPTIONSè¯´æ˜Žï¼š
+    -f :æŒ‡å®šè¿”å›žå€¼çš„æ¨¡æ¿æ–‡ä»¶ã€‚
 
-ÊµÀý:ÏÔÊ¾ Docker °æ±¾ÐÅÏ¢
+å®žä¾‹:æ˜¾ç¤º Docker ç‰ˆæœ¬ä¿¡æ¯
 # docker version
 
 
 =====================================================================
-2. ÏÔÊ¾ Docker ÏµÍ³ÐÅÏ¢£¬°üÀ¨¾µÏñºÍÈÝÆ÷Êý
+2. æ˜¾ç¤º Docker ç³»ç»Ÿä¿¡æ¯ï¼ŒåŒ…æ‹¬é•œåƒå’Œå®¹å™¨æ•°
 docker info [OPTIONS]
 
-ÊµÀý: ²é¿´dockerÏµÍ³ÐÅÏ¢
+å®žä¾‹: æŸ¥çœ‹dockerç³»ç»Ÿä¿¡æ¯
 # docker info
 
 
 =====================================================================
-3. ÁÐ³ö±¾µØ¾µÏñ
+3. åˆ—å‡ºæœ¬åœ°é•œåƒ
 docker images [OPTIONS] [REPOSITORY[:TAG]]
 
-OPTIONSËµÃ÷:
-    -a :ÁÐ³ö±¾µØËùÓÐµÄ¾µÏñ£¨º¬ÖÐ¼äÓ³Ïñ²ã£¬Ä¬ÈÏÇé¿öÏÂ£¬¹ýÂËµôÖÐ¼äÓ³Ïñ²ã£©
-    --digests :ÏÔÊ¾¾µÏñµÄÕªÒªÐÅÏ¢
-    -f :ÏÔÊ¾Âú×ãÌõ¼þµÄ¾µÏñ
-    --format :Ö¸¶¨·µ»ØÖµµÄÄ£°åÎÄ¼þ
-    --no-trunc :ÏÔÊ¾ÍêÕûµÄ¾µÏñÐÅÏ¢
-    -q :Ö»ÏÔÊ¾¾µÏñID
+OPTIONSè¯´æ˜Ž:
+    -a :åˆ—å‡ºæœ¬åœ°æ‰€æœ‰çš„é•œåƒï¼ˆå«ä¸­é—´æ˜ åƒå±‚ï¼Œé»˜è®¤æƒ…å†µä¸‹ï¼Œè¿‡æ»¤æŽ‰ä¸­é—´æ˜ åƒå±‚ï¼‰
+    --digests :æ˜¾ç¤ºé•œåƒçš„æ‘˜è¦ä¿¡æ¯
+    -f :æ˜¾ç¤ºæ»¡è¶³æ¡ä»¶çš„é•œåƒ
+    --format :æŒ‡å®šè¿”å›žå€¼çš„æ¨¡æ¿æ–‡ä»¶
+    --no-trunc :æ˜¾ç¤ºå®Œæ•´çš„é•œåƒä¿¡æ¯
+    -q :åªæ˜¾ç¤ºé•œåƒID
 
-ÊµÀý:
-²é¿´±¾µØ¾µÏñÁÐ±í
+å®žä¾‹:
+æŸ¥çœ‹æœ¬åœ°é•œåƒåˆ—è¡¨
 # docker images
-ÁÐ³ö±¾µØ¾µÏñÖÐREPOSITORYÎªubuntuµÄ¾µÏñÁÐ±í
+åˆ—å‡ºæœ¬åœ°é•œåƒä¸­REPOSITORYä¸ºubuntuçš„é•œåƒåˆ—è¡¨
 # docker images ubuntu
 
 
 =====================================================================
-4. É¾³ý±¾µØÒ»¸ö»ò¶àÉÙ¾µÏñ
+4. åˆ é™¤æœ¬åœ°ä¸€ä¸ªæˆ–å¤šå°‘é•œåƒ
 docker rmi [OPTIONS] IMAGE [IMAGE...]
 
-OPTIONSËµÃ÷£º
-    -f :Ç¿ÖÆÉ¾³ý
-    --no-prune :²»ÒÆ³ý¸Ã¾µÏñµÄ¹ý³Ì¾µÏñ£¬Ä¬ÈÏÒÆ³ý
+OPTIONSè¯´æ˜Žï¼š
+    -f :å¼ºåˆ¶åˆ é™¤
+    --no-prune :ä¸ç§»é™¤è¯¥é•œåƒçš„è¿‡ç¨‹é•œåƒï¼Œé»˜è®¤ç§»é™¤
 
-ÊµÀý: Ç¿ÖÆÉ¾³ý±¾µØ¾µÏñrunoob/ubuntu:v4
+å®žä¾‹: å¼ºåˆ¶åˆ é™¤æœ¬åœ°é•œåƒrunoob/ubuntu:v4
 # docker rmi -f runoob/ubuntu:v4
 
 
 =====================================================================
-5. Ê¹ÓÃDockerfile´´½¨¾µÏñ
+5. ä½¿ç”¨Dockerfileåˆ›å»ºé•œåƒ
 docker build [OPTIONS] PATH | URL | -
 
-OPTIONSËµÃ÷£º
-    --build-arg=[] :ÉèÖÃ¾µÏñ´´½¨Ê±µÄ±äÁ¿
-    --cpu-shares :ÉèÖÃ cpu Ê¹ÓÃÈ¨ÖØ
-    --cpu-period :ÏÞÖÆ CPU CFSÖÜÆÚ
-    --cpu-quota :ÏÞÖÆ CPU CFSÅä¶î
-    --cpuset-cpus :Ö¸¶¨Ê¹ÓÃµÄCPU id
-    --cpuset-mems :Ö¸¶¨Ê¹ÓÃµÄÄÚ´æ id
-    --disable-content-trust :ºöÂÔÐ£Ñé£¬Ä¬ÈÏ¿ªÆô
-    -f :Ö¸¶¨ÒªÊ¹ÓÃµÄDockerfileÂ·¾¶
-    --force-rm :ÉèÖÃ¾µÏñ¹ý³ÌÖÐÉ¾³ýÖÐ¼äÈÝÆ÷
-    --isolation :Ê¹ÓÃÈÝÆ÷¸ôÀë¼¼Êõ
-    --label=[] :ÉèÖÃ¾µÏñÊ¹ÓÃµÄÔªÊý¾Ý
-    -m :ÉèÖÃÄÚ´æ×î´óÖµ
-    --memory-swap :ÉèÖÃSwapµÄ×î´óÖµÎªÄÚ´æ+swap£¬"-1"±íÊ¾²»ÏÞswap
-    --no-cache :´´½¨¾µÏñµÄ¹ý³Ì²»Ê¹ÓÃ»º´æ
-    --pull :³¢ÊÔÈ¥¸üÐÂ¾µÏñµÄÐÂ°æ±¾
-    -q :°²¾²Ä£Ê½£¬³É¹¦ºóÖ»Êä³ö¾µÏñID£»
-    --rm :ÉèÖÃ¾µÏñ³É¹¦ºóÉ¾³ýÖÐ¼äÈÝÆ÷£»
-    --shm-size :ÉèÖÃ/dev/shmµÄ´óÐ¡£¬Ä¬ÈÏÖµÊÇ64M
-    --ulimit :UlimitÅäÖÃ
+OPTIONSè¯´æ˜Žï¼š
+    --build-arg=[] :è®¾ç½®é•œåƒåˆ›å»ºæ—¶çš„å˜é‡
+    --cpu-shares :è®¾ç½® cpu ä½¿ç”¨æƒé‡
+    --cpu-period :é™åˆ¶ CPU CFSå‘¨æœŸ
+    --cpu-quota :é™åˆ¶ CPU CFSé…é¢
+    --cpuset-cpus :æŒ‡å®šä½¿ç”¨çš„CPU id
+    --cpuset-mems :æŒ‡å®šä½¿ç”¨çš„å†…å­˜ id
+    --disable-content-trust :å¿½ç•¥æ ¡éªŒï¼Œé»˜è®¤å¼€å¯
+    -f :æŒ‡å®šè¦ä½¿ç”¨çš„Dockerfileè·¯å¾„
+    --force-rm :è®¾ç½®é•œåƒè¿‡ç¨‹ä¸­åˆ é™¤ä¸­é—´å®¹å™¨
+    --isolation :ä½¿ç”¨å®¹å™¨éš”ç¦»æŠ€æœ¯
+    --label=[] :è®¾ç½®é•œåƒä½¿ç”¨çš„å…ƒæ•°æ®
+    -m :è®¾ç½®å†…å­˜æœ€å¤§å€¼
+    --memory-swap :è®¾ç½®Swapçš„æœ€å¤§å€¼ä¸ºå†…å­˜+swapï¼Œ"-1"è¡¨ç¤ºä¸é™swap
+    --no-cache :åˆ›å»ºé•œåƒçš„è¿‡ç¨‹ä¸ä½¿ç”¨ç¼“å­˜
+    --pull :å°è¯•åŽ»æ›´æ–°é•œåƒçš„æ–°ç‰ˆæœ¬
+    -q :å®‰é™æ¨¡å¼ï¼ŒæˆåŠŸåŽåªè¾“å‡ºé•œåƒIDï¼›
+    --rm :è®¾ç½®é•œåƒæˆåŠŸåŽåˆ é™¤ä¸­é—´å®¹å™¨ï¼›
+    --shm-size :è®¾ç½®/dev/shmçš„å¤§å°ï¼Œé»˜è®¤å€¼æ˜¯64M
+    --ulimit :Ulimité…ç½®
 
-ÊµÀý:
-Ê¹ÓÃµ±Ç°Ä¿Â¼µÄDockerfile´´½¨¾µÏñ
+å®žä¾‹:
+ä½¿ç”¨å½“å‰ç›®å½•çš„Dockerfileåˆ›å»ºé•œåƒ
 # docker build -t runoob/ubuntu:v1
-Ê¹ÓÃURL github.com/creack/docker-firefox µÄ Dockerfile ´´½¨¾µÏñ
+ä½¿ç”¨URL github.com/creack/docker-firefox çš„ Dockerfile åˆ›å»ºé•œåƒ
 # docker build github.com/creack/docker-firefox
 
 
 =====================================================================
-6. ½«Ö¸¶¨¾µÏñ±£´æ³É tar ¹éµµÎÄ¼þ
+6. å°†æŒ‡å®šé•œåƒä¿å­˜æˆ tar å½’æ¡£æ–‡ä»¶
 docker save [OPTIONS] IMAGE [IMAGE...]
 
-OPTIONSËµÃ÷£º
-    -o :Êä³öµ½µÄÎÄ¼þ
+OPTIONSè¯´æ˜Žï¼š
+    -o :è¾“å‡ºåˆ°çš„æ–‡ä»¶
 
-ÊµÀý:½«¾µÏñrunoob/ubuntu:v3 Éú³Émy_ubuntu_v3.tarÎÄµµ
+å®žä¾‹:å°†é•œåƒrunoob/ubuntu:v3 ç”Ÿæˆmy_ubuntu_v3.taræ–‡æ¡£
 # docker save -o my_ubuntu_v3.tar runoob/ubuntu:v3
 
-docker ÈÝÆ÷µ¼Èëµ¼³öÓÐÁ½ÖÖ·½·¨
-Ò»ÖÖÊÇÊ¹ÓÃ save ºÍ load ÃüÁî
+docker å®¹å™¨å¯¼å…¥å¯¼å‡ºæœ‰ä¸¤ç§æ–¹æ³•
+ä¸€ç§æ˜¯ä½¿ç”¨ save å’Œ load å‘½ä»¤
 # docker save ubuntu:load > /root/ubuntu.tar
 # docker load < ubuntu.tar
 
-Ò»ÖÖÊÇÊ¹ÓÃ export ºÍ import ÃüÁî
+ä¸€ç§æ˜¯ä½¿ç”¨ export å’Œ import å‘½ä»¤
 # docker export 98ca36 > ubuntu.tar
 # cat ubuntu.tar | sudo docker import - ubuntu:import
 
-*ÐèÒª×¢ÒâÁ½ÖÖ·½·¨²»¿É»ìÓÃ
+*éœ€è¦æ³¨æ„ä¸¤ç§æ–¹æ³•ä¸å¯æ··ç”¨
 
 
 =====================================================================
-7. ´Ó¹éµµÎÄ¼þÖÐ´´½¨¾µÏñ
+7. ä»Žå½’æ¡£æ–‡ä»¶ä¸­åˆ›å»ºé•œåƒ
 docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
 
-OPTIONSËµÃ÷£º
-    -c :Ó¦ÓÃdocker Ö¸Áî´´½¨¾µÏñ
-    -m :Ìá½»Ê±µÄËµÃ÷ÎÄ×Ö
+OPTIONSè¯´æ˜Žï¼š
+    -c :åº”ç”¨docker æŒ‡ä»¤åˆ›å»ºé•œåƒ
+    -m :æäº¤æ—¶çš„è¯´æ˜Žæ–‡å­—
 
-ÊµÀý: ´Ó¾µÏñ¹éµµÎÄ¼þmy_ubuntu_v3.tar´´½¨¾µÏñ£¬ÃüÃûÎªrunoob/ubuntu:v4
+å®žä¾‹: ä»Žé•œåƒå½’æ¡£æ–‡ä»¶my_ubuntu_v3.taråˆ›å»ºé•œåƒï¼Œå‘½åä¸ºrunoob/ubuntu:v4
 # docker import my_ubuntu_v3.tar runoob/ubuntu:v4
 
 
 =====================================================================
-8. ´Ó¾µÏñ²Ö¿âÖÐÀ­È¡»òÕß¸üÐÂÖ¸¶¨¾µÏñ
+8. ä»Žé•œåƒä»“åº“ä¸­æ‹‰å–æˆ–è€…æ›´æ–°æŒ‡å®šé•œåƒ
 docker pull [OPTIONS] NAME[:TAG|@DIGEST]
 
-OPTIONSËµÃ÷£º
-    -a :À­È¡ËùÓÐ tagged ¾µÏñ
-    --disable-content-trust :ºöÂÔ¾µÏñµÄÐ£Ñé,Ä¬ÈÏ¿ªÆô
+OPTIONSè¯´æ˜Žï¼š
+    -a :æ‹‰å–æ‰€æœ‰ tagged é•œåƒ
+    --disable-content-trust :å¿½ç•¥é•œåƒçš„æ ¡éªŒ,é»˜è®¤å¼€å¯
 
-ÊµÀý
-´ÓDocker HubÏÂÔØjava×îÐÂ°æ¾µÏñ
+å®žä¾‹
+ä»ŽDocker Hubä¸‹è½½javaæœ€æ–°ç‰ˆé•œåƒ
 # docker pull java
-´ÓDocker HubÏÂÔØREPOSITORYÎªjavaµÄËùÓÐ¾µÏñ
+ä»ŽDocker Hubä¸‹è½½REPOSITORYä¸ºjavaçš„æ‰€æœ‰é•œåƒ
 # docker pull -a java
 
 
 =====================================================================
-9. ½«±¾µØµÄ¾µÏñÉÏ´«µ½¾µÏñ²Ö¿â,ÒªÏÈµÇÂ½µ½¾µÏñ²Ö¿â
+9. å°†æœ¬åœ°çš„é•œåƒä¸Šä¼ åˆ°é•œåƒä»“åº“,è¦å…ˆç™»é™†åˆ°é•œåƒä»“åº“
 docker push [OPTIONS] NAME[:TAG]
 
-OPTIONSËµÃ÷£º
-    --disable-content-trust :ºöÂÔ¾µÏñµÄÐ£Ñé,Ä¬ÈÏ¿ªÆô
+OPTIONSè¯´æ˜Žï¼š
+    --disable-content-trust :å¿½ç•¥é•œåƒçš„æ ¡éªŒ,é»˜è®¤å¼€å¯
 
-ÊµÀý: ÉÏ´«±¾µØ¾µÏñmyapache:v1µ½¾µÏñ²Ö¿âÖÐ
+å®žä¾‹: ä¸Šä¼ æœ¬åœ°é•œåƒmyapache:v1åˆ°é•œåƒä»“åº“ä¸­
 # docker push myapache:v1
 
 
 =====================================================================
-10. ´ÓDocker Hub²éÕÒ¾µÏñ
+10. ä»ŽDocker HubæŸ¥æ‰¾é•œåƒ
 docker search [OPTIONS] TERM
 
-OPTIONSËµÃ÷£º
-    --automated :Ö»ÁÐ³ö automated buildÀàÐÍµÄ¾µÏñ
-    --no-trunc :ÏÔÊ¾ÍêÕûµÄ¾µÏñÃèÊö
-    -s :ÁÐ³öÊÕ²ØÊý²»Ð¡ÓÚÖ¸¶¨ÖµµÄ¾µÏñ
+OPTIONSè¯´æ˜Žï¼š
+    --automated :åªåˆ—å‡º automated buildç±»åž‹çš„é•œåƒ
+    --no-trunc :æ˜¾ç¤ºå®Œæ•´çš„é•œåƒæè¿°
+    -s :åˆ—å‡ºæ”¶è—æ•°ä¸å°äºŽæŒ‡å®šå€¼çš„é•œåƒ
 
-ÊµÀý: ´ÓDocker Hub²éÕÒËùÓÐ¾µÏñÃû°üº¬java£¬²¢ÇÒÊÕ²ØÊý´óÓÚ10µÄ¾µÏñ
+å®žä¾‹: ä»ŽDocker HubæŸ¥æ‰¾æ‰€æœ‰é•œåƒååŒ…å«javaï¼Œå¹¶ä¸”æ”¶è—æ•°å¤§äºŽ10çš„é•œåƒ
 # docker search -s 10 java
 
 
 =====================================================================
-11. ÁÐ³öÈÝÆ÷
+11. åˆ—å‡ºå®¹å™¨
 docker ps [OPTIONS]
 
-OPTIONSËµÃ÷£º
-    -a :ÏÔÊ¾ËùÓÐµÄÈÝÆ÷£¬°üÀ¨Î´ÔËÐÐµÄ
-    -f :¸ù¾ÝÌõ¼þ¹ýÂËÏÔÊ¾µÄÄÚÈÝ
-    --format :Ö¸¶¨·µ»ØÖµµÄÄ£°åÎÄ¼þ
-    -l :ÏÔÊ¾×î½ü´´½¨µÄÈÝÆ÷
-    -n :ÁÐ³ö×î½ü´´½¨µÄn¸öÈÝÆ÷
-    --no-trunc :²»½Ø¶ÏÊä³ö
-    -q :¾²Ä¬Ä£Ê½£¬Ö»ÏÔÊ¾ÈÝÆ÷±àºÅ
-    -s :ÏÔÊ¾×ÜµÄÎÄ¼þ´óÐ¡
+OPTIONSè¯´æ˜Žï¼š
+    -a :æ˜¾ç¤ºæ‰€æœ‰çš„å®¹å™¨ï¼ŒåŒ…æ‹¬æœªè¿è¡Œçš„
+    -f :æ ¹æ®æ¡ä»¶è¿‡æ»¤æ˜¾ç¤ºçš„å†…å®¹
+    --format :æŒ‡å®šè¿”å›žå€¼çš„æ¨¡æ¿æ–‡ä»¶
+    -l :æ˜¾ç¤ºæœ€è¿‘åˆ›å»ºçš„å®¹å™¨
+    -n :åˆ—å‡ºæœ€è¿‘åˆ›å»ºçš„nä¸ªå®¹å™¨
+    --no-trunc :ä¸æˆªæ–­è¾“å‡º
+    -q :é™é»˜æ¨¡å¼ï¼Œåªæ˜¾ç¤ºå®¹å™¨ç¼–å·
+    -s :æ˜¾ç¤ºæ€»çš„æ–‡ä»¶å¤§å°
     
-ÊµÀý
-ÁÐ³öËùÓÐÔÚÔËÐÐµÄÈÝÆ÷ÐÅÏ¢
+å®žä¾‹
+åˆ—å‡ºæ‰€æœ‰åœ¨è¿è¡Œçš„å®¹å™¨ä¿¡æ¯
 # docker ps
-ÁÐ³ö×î½ü´´½¨µÄ5¸öÈÝÆ÷ÐÅÏ¢
+åˆ—å‡ºæœ€è¿‘åˆ›å»ºçš„5ä¸ªå®¹å™¨ä¿¡æ¯
 # docker ps -n 5
-ÁÐ³öËùÓÐ´´½¨µÄÈÝÆ÷ID
+åˆ—å‡ºæ‰€æœ‰åˆ›å»ºçš„å®¹å™¨ID
 # docker ps -a -q
 
 
 =====================================================================
-12. »ñÈ¡ÈÝÆ÷µÄÈÕÖ¾
+12. èŽ·å–å®¹å™¨çš„æ—¥å¿—
 docker logs [OPTIONS] CONTAINER
 
-OPTIONSËµÃ÷£º
-    -f : ¸ú×ÙÈÕÖ¾Êä³ö
-    --since :ÏÔÊ¾Ä³¸ö¿ªÊ¼Ê±¼äµÄËùÓÐÈÕÖ¾
-    -t : ÏÔÊ¾Ê±¼ä´Á
-    --tail :½öÁÐ³ö×îÐÂNÌõÈÝÆ÷ÈÕÖ¾
+OPTIONSè¯´æ˜Žï¼š
+    -f : è·Ÿè¸ªæ—¥å¿—è¾“å‡º
+    --since :æ˜¾ç¤ºæŸä¸ªå¼€å§‹æ—¶é—´çš„æ‰€æœ‰æ—¥å¿—
+    -t : æ˜¾ç¤ºæ—¶é—´æˆ³
+    --tail :ä»…åˆ—å‡ºæœ€æ–°Næ¡å®¹å™¨æ—¥å¿—
 
-ÊµÀý
-¸ú×Ù²é¿´ÈÝÆ÷mynginxµÄÈÕÖ¾Êä³ö
+å®žä¾‹
+è·Ÿè¸ªæŸ¥çœ‹å®¹å™¨mynginxçš„æ—¥å¿—è¾“å‡º
 # docker logs -f mynginx
-²é¿´ÈÝÆ÷mynginx´Ó2016Äê7ÔÂ1ÈÕºóµÄ×îÐÂ10ÌõÈÕÖ¾
+æŸ¥çœ‹å®¹å™¨mynginxä»Ž2016å¹´7æœˆ1æ—¥åŽçš„æœ€æ–°10æ¡æ—¥å¿—
 # docker logs --since="2016-07-01" --tail=10 mynginx
 
 
 =====================================================================
-13. ²é¿´ÈÝÆ÷ÖÐÔËÐÐµÄ½ø³ÌÐÅÏ¢£¬Ö§³Ö ps ÃüÁî²ÎÊý
+13. æŸ¥çœ‹å®¹å™¨ä¸­è¿è¡Œçš„è¿›ç¨‹ä¿¡æ¯ï¼Œæ”¯æŒ ps å‘½ä»¤å‚æ•°
 docker top [OPTIONS] CONTAINER [ps OPTIONS]
 
-ÈÝÆ÷ÔËÐÐÊ±²»Ò»¶¨ÓÐ/bin/bashÖÕ¶ËÀ´½»»¥Ö´ÐÐtopÃüÁî£¬¶øÇÒÈÝÆ÷»¹²»Ò»¶¨ÓÐtopÃüÁî£¬¿ÉÒÔÊ¹ÓÃdocker topÀ´ÊµÏÖ²é¿´containerÖÐÕýÔÚÔËÐÐµÄ½ø³Ì
+å®¹å™¨è¿è¡Œæ—¶ä¸ä¸€å®šæœ‰/bin/bashç»ˆç«¯æ¥äº¤äº’æ‰§è¡Œtopå‘½ä»¤ï¼Œè€Œä¸”å®¹å™¨è¿˜ä¸ä¸€å®šæœ‰topå‘½ä»¤ï¼Œå¯ä»¥ä½¿ç”¨docker topæ¥å®žçŽ°æŸ¥çœ‹containerä¸­æ­£åœ¨è¿è¡Œçš„è¿›ç¨‹
 
-ÊµÀý
-²é¿´ÈÝÆ÷mymysqlµÄ½ø³ÌÐÅÏ¢
+å®žä¾‹
+æŸ¥çœ‹å®¹å™¨mymysqlçš„è¿›ç¨‹ä¿¡æ¯
 # docker top mymysql
-²é¿´ËùÓÐÔËÐÐÈÝÆ÷µÄ½ø³ÌÐÅÏ¢
+æŸ¥çœ‹æ‰€æœ‰è¿è¡Œå®¹å™¨çš„è¿›ç¨‹ä¿¡æ¯
 for i in  `docker ps |grep Up|awk '{print $1}'`;do echo \ &&docker top $i; done
 
 
 =====================================================================
-14. »ñÈ¡ÈÝÆ÷/¾µÏñµÄÔªÊý¾Ý
+14. èŽ·å–å®¹å™¨/é•œåƒçš„å…ƒæ•°æ®
 docker inspect [OPTIONS] NAME|ID [NAME|ID...]
 
-OPTIONSËµÃ÷£º
-    -f :Ö¸¶¨·µ»ØÖµµÄÄ£°åÎÄ¼þ¡£
-    -s :ÏÔÊ¾×ÜµÄÎÄ¼þ´óÐ¡¡£
-    --type :ÎªÖ¸¶¨ÀàÐÍ·µ»ØJSON
+OPTIONSè¯´æ˜Žï¼š
+    -f :æŒ‡å®šè¿”å›žå€¼çš„æ¨¡æ¿æ–‡ä»¶ã€‚
+    -s :æ˜¾ç¤ºæ€»çš„æ–‡ä»¶å¤§å°ã€‚
+    --type :ä¸ºæŒ‡å®šç±»åž‹è¿”å›žJSON
     
-ÊµÀý
-»ñÈ¡¾µÏñmysql:5.6µÄÔªÐÅÏ¢
+å®žä¾‹
+èŽ·å–é•œåƒmysql:5.6çš„å…ƒä¿¡æ¯
 # docker inspect mysql:5.6
-»ñÈ¡ÕýÔÚÔËÐÐµÄÈÝÆ÷mymysqlµÄ IP
+èŽ·å–æ­£åœ¨è¿è¡Œçš„å®¹å™¨mymysqlçš„ IP
 # docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mymysql
 
 
 =====================================================================
-15. Á¬½Óµ½ÕýÔÚÔËÐÐÖÐµÄÈÝÆ÷
+15. è¿žæŽ¥åˆ°æ­£åœ¨è¿è¡Œä¸­çš„å®¹å™¨
 docker attach [OPTIONS] CONTAINER
 
-ÊµÀý
-ÈÝÆ÷mynginx½«·ÃÎÊÈÕÖ¾Ö¸µ½±ê×¼Êä³ö£¬Á¬½Óµ½ÈÝÆ÷²é¿´·ÃÎÊÐÅÏ¢
+å®žä¾‹
+å®¹å™¨mynginxå°†è®¿é—®æ—¥å¿—æŒ‡åˆ°æ ‡å‡†è¾“å‡ºï¼Œè¿žæŽ¥åˆ°å®¹å™¨æŸ¥çœ‹è®¿é—®ä¿¡æ¯
 # docker attach --sig-proxy=false mynginx
 
 
 =====================================================================
-16. ´Ó·þÎñÆ÷»ñÈ¡ÊµÊ±ÊÂ¼þ
+16. ä»ŽæœåŠ¡å™¨èŽ·å–å®žæ—¶äº‹ä»¶
 docker events [OPTIONS]
 
-OPTIONSËµÃ÷£º
-    -f £º¸ù¾ÝÌõ¼þ¹ýÂËÊÂ¼þ
-    --since £º´ÓÖ¸¶¨µÄÊ±¼ä´ÁºóÏÔÊ¾ËùÓÐÊÂ¼þ
-    --until £ºÁ÷Ë®Ê±¼äÏÔÊ¾µ½Ö¸¶¨µÄÊ±¼äÎªÖ¹
+OPTIONSè¯´æ˜Žï¼š
+    -f ï¼šæ ¹æ®æ¡ä»¶è¿‡æ»¤äº‹ä»¶
+    --since ï¼šä»ŽæŒ‡å®šçš„æ—¶é—´æˆ³åŽæ˜¾ç¤ºæ‰€æœ‰äº‹ä»¶
+    --until ï¼šæµæ°´æ—¶é—´æ˜¾ç¤ºåˆ°æŒ‡å®šçš„æ—¶é—´ä¸ºæ­¢
 
-ÊµÀý
-ÏÔÊ¾docker 2016Äê7ÔÂ1ÈÕºóµÄËùÓÐÊÂ¼þ
+å®žä¾‹
+æ˜¾ç¤ºdocker 2016å¹´7æœˆ1æ—¥åŽçš„æ‰€æœ‰äº‹ä»¶
 # docker events  --since="1467302400"
-ÏÔÊ¾docker ¾µÏñÎªmysql:5.6 2016Äê7ÔÂ1ÈÕºóµÄÏà¹ØÊÂ¼þ¡£
+æ˜¾ç¤ºdocker é•œåƒä¸ºmysql:5.6 2016å¹´7æœˆ1æ—¥åŽçš„ç›¸å…³äº‹ä»¶ã€‚
 # docker events -f "image"="mysql:5.6" --since="1467302400" 
 
 
 =====================================================================
-17. ½«ÎÄ¼þÏµÍ³×÷ÎªÒ»¸ötar¹éµµÎÄ¼þµ¼³öµ½STDOUT
+17. å°†æ–‡ä»¶ç³»ç»Ÿä½œä¸ºä¸€ä¸ªtarå½’æ¡£æ–‡ä»¶å¯¼å‡ºåˆ°STDOUT
 docker export [OPTIONS] CONTAINER
 
-OPTIONSËµÃ÷:
-    -o :½«ÊäÈëÄÚÈÝÐ´µ½ÎÄ¼þ
+OPTIONSè¯´æ˜Ž:
+    -o :å°†è¾“å…¥å†…å®¹å†™åˆ°æ–‡ä»¶
 
-ÊµÀý: ½«idÎªa404c6c174a2µÄÈÝÆ÷°´ÈÕÆÚ±£´æÎªtarÎÄ¼þ
+å®žä¾‹: å°†idä¸ºa404c6c174a2çš„å®¹å™¨æŒ‰æ—¥æœŸä¿å­˜ä¸ºtaræ–‡ä»¶
 # docker export -o mysql-`date +%Y%m%d`.tar a404c6c174a2
 
 
 =====================================================================
-18. Æô¶¯/Í£Ö¹/ÖØÆôÈÝÆ÷
+18. å¯åŠ¨/åœæ­¢/é‡å¯å®¹å™¨
 docker start [OPTIONS] CONTAINER [CONTAINER...]
 docker stop [OPTIONS] CONTAINER [CONTAINER...]
 docker restart [OPTIONS] CONTAINER [CONTAINER...]
 
-ÊµÀý
-Æô¶¯ÒÑ±»Í£Ö¹µÄÈÝÆ÷myrunoob
+å®žä¾‹
+å¯åŠ¨å·²è¢«åœæ­¢çš„å®¹å™¨myrunoob
 # docker start myrunoob
-Í£Ö¹ÔËÐÐÖÐµÄÈÝÆ÷myrunoob
+åœæ­¢è¿è¡Œä¸­çš„å®¹å™¨myrunoob
 # docker stop myrunoob
-ÖØÆôÈÝÆ÷myrunoob
+é‡å¯å®¹å™¨myrunoob
 # docker restart myrunoob
 
 
 =====================================================================
-19. É±µôÒ»¸öÔËÐÐÖÐµÄÈÝÆ÷
+19. æ€æŽ‰ä¸€ä¸ªè¿è¡Œä¸­çš„å®¹å™¨
 docker kill [OPTIONS] CONTAINER [CONTAINER...]
 
-OPTIONSËµÃ÷£º
-    -s :ÏòÈÝÆ÷·¢ËÍÒ»¸öÐÅºÅ
+OPTIONSè¯´æ˜Žï¼š
+    -s :å‘å®¹å™¨å‘é€ä¸€ä¸ªä¿¡å·
 
-ÊµÀý: É±µôÔËÐÐÖÐµÄÈÝÆ÷mynginx
+å®žä¾‹: æ€æŽ‰è¿è¡Œä¸­çš„å®¹å™¨mynginx
 # docker kill -s KILL mynginx
 
 
 =====================================================================
-20. É¾³ýÒ»¸ö»ò¶à¸öÈÝÆ÷
+20. åˆ é™¤ä¸€ä¸ªæˆ–å¤šä¸ªå®¹å™¨
 docker rm [OPTIONS] CONTAINER [CONTAINER...]
 
-OPTIONSËµÃ÷£º
-    -f :Í¨¹ýSIGKILLÐÅºÅÇ¿ÖÆÉ¾³ýÒ»¸öÔËÐÐÖÐµÄÈÝÆ÷
-    -l :ÒÆ³ýÈÝÆ÷¼äµÄÍøÂçÁ¬½Ó£¬¶ø·ÇÈÝÆ÷±¾Éí
-    -v :-v É¾³ýÓëÈÝÆ÷¹ØÁªµÄ¾í
+OPTIONSè¯´æ˜Žï¼š
+    -f :é€šè¿‡SIGKILLä¿¡å·å¼ºåˆ¶åˆ é™¤ä¸€ä¸ªè¿è¡Œä¸­çš„å®¹å™¨
+    -l :ç§»é™¤å®¹å™¨é—´çš„ç½‘ç»œè¿žæŽ¥ï¼Œè€Œéžå®¹å™¨æœ¬èº«
+    -v :-v åˆ é™¤ä¸Žå®¹å™¨å…³è”çš„å·
 
-ÊµÀý
-Ç¿ÖÆÉ¾³ýÈÝÆ÷db01¡¢db02
-# docker rm -f db01¡¢db02
-ÒÆ³ýÈÝÆ÷nginx01¶ÔÈÝÆ÷db01µÄÁ¬½Ó£¬Á¬½ÓÃûdb
+å®žä¾‹
+å¼ºåˆ¶åˆ é™¤å®¹å™¨db01ã€db02
+# docker rm -f db01ã€db02
+ç§»é™¤å®¹å™¨nginx01å¯¹å®¹å™¨db01çš„è¿žæŽ¥ï¼Œè¿žæŽ¥ådb
 # docker rm -l db 
-É¾³ýÈÝÆ÷nginx01,²¢É¾³ýÈÝÆ÷¹ÒÔØµÄÊý¾Ý¾í
+åˆ é™¤å®¹å™¨nginx01,å¹¶åˆ é™¤å®¹å™¨æŒ‚è½½çš„æ•°æ®å·
 # docker rm -v nginx01
 
 
 =====================================================================
-21. ÔÚÔËÐÐµÄÈÝÆ÷ÖÐÖ´ÐÐÃüÁî
+21. åœ¨è¿è¡Œçš„å®¹å™¨ä¸­æ‰§è¡Œå‘½ä»¤
 docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 
-OPTIONSËµÃ÷£º
-    -d :·ÖÀëÄ£Ê½: ÔÚºóÌ¨ÔËÐÐ
-    -i :¼´Ê¹Ã»ÓÐ¸½¼ÓÒ²±£³ÖSTDIN ´ò¿ª
-    -t :·ÖÅäÒ»¸öÎ±ÖÕ¶Ë
+OPTIONSè¯´æ˜Žï¼š
+    -d :åˆ†ç¦»æ¨¡å¼: åœ¨åŽå°è¿è¡Œ
+    -i :å³ä½¿æ²¡æœ‰é™„åŠ ä¹Ÿä¿æŒSTDIN æ‰“å¼€
+    -t :åˆ†é…ä¸€ä¸ªä¼ªç»ˆç«¯
 
-ÊµÀý
-ÔÚÈÝÆ÷mynginxÖÐÒÔ½»»¥Ä£Ê½Ö´ÐÐÈÝÆ÷ÄÚ/root/runoob.sh½Å±¾
+å®žä¾‹
+åœ¨å®¹å™¨mynginxä¸­ä»¥äº¤äº’æ¨¡å¼æ‰§è¡Œå®¹å™¨å†…/root/runoob.shè„šæœ¬
 # docker exec -it mynginx /bin/sh /root/runoob.sh
-ÔÚÈÝÆ÷mynginxÖÐ¿ªÆôÒ»¸ö½»»¥Ä£Ê½µÄÖÕ¶Ë
+åœ¨å®¹å™¨mynginxä¸­å¼€å¯ä¸€ä¸ªäº¤äº’æ¨¡å¼çš„ç»ˆç«¯
 # docker exec -i -t  mynginx /bin/bash
 
 
 =====================================================================
-22. ´´½¨Ò»¸öÐÂµÄÈÝÆ÷µ«²»Æô¶¯Ëü
+22. åˆ›å»ºä¸€ä¸ªæ–°çš„å®¹å™¨ä½†ä¸å¯åŠ¨å®ƒ
 docker create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-Óï·¨Í¬ docker run
+è¯­æ³•åŒ docker run
 
-ÊµÀý: Ê¹ÓÃdocker¾µÏñnginx:latest´´½¨Ò»¸öÈÝÆ÷,²¢½«ÈÝÆ÷ÃüÃûÎªmyrunoob
+å®žä¾‹: ä½¿ç”¨dockeré•œåƒnginx:lateståˆ›å»ºä¸€ä¸ªå®¹å™¨,å¹¶å°†å®¹å™¨å‘½åä¸ºmyrunoob
 # docker create  --name myrunoob  nginx:latest  
 
 
 =====================================================================    
-23. ´´½¨Ò»¸öÐÂµÄÈÝÆ÷²¢ÔËÐÐÒ»¸öÃüÁî
+23. åˆ›å»ºä¸€ä¸ªæ–°çš„å®¹å™¨å¹¶è¿è¡Œä¸€ä¸ªå‘½ä»¤
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-OPTIONSËµÃ÷£º
-    -a stdin: Ö¸¶¨±ê×¼ÊäÈëÊä³öÄÚÈÝÀàÐÍ£¬¿ÉÑ¡ STDIN/STDOUT/STDERR ÈýÏî
-    -d: ºóÌ¨ÔËÐÐÈÝÆ÷£¬²¢·µ»ØÈÝÆ÷ID
-    -i: ÒÔ½»»¥Ä£Ê½ÔËÐÐÈÝÆ÷£¬Í¨³£Óë -t Í¬Ê±Ê¹ÓÃ
-    -t: ÎªÈÝÆ÷ÖØÐÂ·ÖÅäÒ»¸öÎ±ÊäÈëÖÕ¶Ë£¬Í¨³£Óë -i Í¬Ê±Ê¹ÓÃ
-    --name="nginx-lb": ÎªÈÝÆ÷Ö¸¶¨Ò»¸öÃû³Æ
-    --dns 8.8.8.8: Ö¸¶¨ÈÝÆ÷Ê¹ÓÃµÄDNS·þÎñÆ÷£¬Ä¬ÈÏºÍËÞÖ÷Ò»ÖÂ
-    --dns-search example.com: Ö¸¶¨ÈÝÆ÷DNSËÑË÷ÓòÃû£¬Ä¬ÈÏºÍËÞÖ÷Ò»ÖÂ
-    -h "mars": Ö¸¶¨ÈÝÆ÷µÄhostname
-    -e username="ritchie": ÉèÖÃ»·¾³±äÁ¿
-    --env-file=[]: ´ÓÖ¸¶¨ÎÄ¼þ¶ÁÈë»·¾³±äÁ¿
-    --cpuset="0-2" or --cpuset="0,1,2": °ó¶¨ÈÝÆ÷µ½Ö¸¶¨CPUÔËÐÐ
-    -m :ÉèÖÃÈÝÆ÷Ê¹ÓÃÄÚ´æ×î´óÖµ
-    --net="bridge": Ö¸¶¨ÈÝÆ÷µÄÍøÂçÁ¬½ÓÀàÐÍ£¬Ö§³Ö bridge/host/none/container: ËÄÖÖÀàÐÍ
-    --link=[]: Ìí¼ÓÁ´½Óµ½ÁíÒ»¸öÈÝÆ÷
-    --expose=[]: ¿ª·ÅÒ»¸ö¶Ë¿Ú»òÒ»×é¶Ë¿Ú
+OPTIONSè¯´æ˜Žï¼š
+    -a stdin: æŒ‡å®šæ ‡å‡†è¾“å…¥è¾“å‡ºå†…å®¹ç±»åž‹ï¼Œå¯é€‰ STDIN/STDOUT/STDERR ä¸‰é¡¹
+    -d: åŽå°è¿è¡Œå®¹å™¨ï¼Œå¹¶è¿”å›žå®¹å™¨ID
+    -i: ä»¥äº¤äº’æ¨¡å¼è¿è¡Œå®¹å™¨ï¼Œé€šå¸¸ä¸Ž -t åŒæ—¶ä½¿ç”¨
+    -t: ä¸ºå®¹å™¨é‡æ–°åˆ†é…ä¸€ä¸ªä¼ªè¾“å…¥ç»ˆç«¯ï¼Œé€šå¸¸ä¸Ž -i åŒæ—¶ä½¿ç”¨
+    --name="nginx-lb": ä¸ºå®¹å™¨æŒ‡å®šä¸€ä¸ªåç§°
+    --dns 8.8.8.8: æŒ‡å®šå®¹å™¨ä½¿ç”¨çš„DNSæœåŠ¡å™¨ï¼Œé»˜è®¤å’Œå®¿ä¸»ä¸€è‡´
+    --dns-search example.com: æŒ‡å®šå®¹å™¨DNSæœç´¢åŸŸåï¼Œé»˜è®¤å’Œå®¿ä¸»ä¸€è‡´
+    -h "mars": æŒ‡å®šå®¹å™¨çš„hostname
+    -e username="ritchie": è®¾ç½®çŽ¯å¢ƒå˜é‡
+    --env-file=[]: ä»ŽæŒ‡å®šæ–‡ä»¶è¯»å…¥çŽ¯å¢ƒå˜é‡
+    --cpuset="0-2" or --cpuset="0,1,2": ç»‘å®šå®¹å™¨åˆ°æŒ‡å®šCPUè¿è¡Œ
+    -m :è®¾ç½®å®¹å™¨ä½¿ç”¨å†…å­˜æœ€å¤§å€¼
+    --net="bridge": æŒ‡å®šå®¹å™¨çš„ç½‘ç»œè¿žæŽ¥ç±»åž‹ï¼Œæ”¯æŒ bridge/host/none/container: å››ç§ç±»åž‹
+    --link=[]: æ·»åŠ é“¾æŽ¥åˆ°å¦ä¸€ä¸ªå®¹å™¨
+    --expose=[]: å¼€æ”¾ä¸€ä¸ªç«¯å£æˆ–ä¸€ç»„ç«¯å£
 
-ÊµÀý
-Ê¹ÓÃdocker¾µÏñnginx:latestÒÔºóÌ¨Ä£Ê½Æô¶¯Ò»¸öÈÝÆ÷,²¢½«ÈÝÆ÷ÃüÃûÎªmynginx
+å®žä¾‹
+ä½¿ç”¨dockeré•œåƒnginx:latestä»¥åŽå°æ¨¡å¼å¯åŠ¨ä¸€ä¸ªå®¹å™¨,å¹¶å°†å®¹å™¨å‘½åä¸ºmynginx
 # docker run --name mynginx -d nginx:latest
-Ê¹ÓÃ¾µÏñnginx:latestÒÔºóÌ¨Ä£Ê½Æô¶¯Ò»¸öÈÝÆ÷,²¢½«ÈÝÆ÷µÄ80¶Ë¿ÚÓ³Éäµ½Ö÷»úËæ»ú¶Ë¿Ú
+ä½¿ç”¨é•œåƒnginx:latestä»¥åŽå°æ¨¡å¼å¯åŠ¨ä¸€ä¸ªå®¹å™¨,å¹¶å°†å®¹å™¨çš„80ç«¯å£æ˜ å°„åˆ°ä¸»æœºéšæœºç«¯å£
 # docker run -P -d nginx:latest
-Ê¹ÓÃ¾µÏñnginx:latestÒÔºóÌ¨Ä£Ê½Æô¶¯Ò»¸öÈÝÆ÷,½«ÈÝÆ÷µÄ80¶Ë¿ÚÓ³Éäµ½Ö÷»úµÄ80¶Ë¿Ú,Ö÷»úµÄÄ¿Â¼/dataÓ³Éäµ½ÈÝÆ÷µÄ/data
+ä½¿ç”¨é•œåƒnginx:latestä»¥åŽå°æ¨¡å¼å¯åŠ¨ä¸€ä¸ªå®¹å™¨,å°†å®¹å™¨çš„80ç«¯å£æ˜ å°„åˆ°ä¸»æœºçš„80ç«¯å£,ä¸»æœºçš„ç›®å½•/dataæ˜ å°„åˆ°å®¹å™¨çš„/data
 # docker run -p 80:80 -v /data:/data -d nginx:latest
-Ê¹ÓÃ¾µÏñnginx:latestÒÔ½»»¥Ä£Ê½Æô¶¯Ò»¸öÈÝÆ÷,ÔÚÈÝÆ÷ÄÚÖ´ÐÐ/bin/bashÃüÁî
+ä½¿ç”¨é•œåƒnginx:latestä»¥äº¤äº’æ¨¡å¼å¯åŠ¨ä¸€ä¸ªå®¹å™¨,åœ¨å®¹å™¨å†…æ‰§è¡Œ/bin/bashå‘½ä»¤
 # docker run -it nginx:latest /bin/bash
 
 
 =====================================================================
-24. ´ÓÈÝÆ÷´´½¨Ò»¸öÐÂµÄ¾µÏñ
+24. ä»Žå®¹å™¨åˆ›å»ºä¸€ä¸ªæ–°çš„é•œåƒ
 docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
 
-OPTIONSËµÃ÷£º
-    -a :Ìá½»µÄ¾µÏñ×÷Õß
-    -c :Ê¹ÓÃDockerfileÖ¸ÁîÀ´´´½¨¾µÏñ
-    -m :Ìá½»Ê±µÄËµÃ÷ÎÄ×Ö
-    -p :ÔÚcommitÊ±£¬½«ÈÝÆ÷ÔÝÍ£
+OPTIONSè¯´æ˜Žï¼š
+    -a :æäº¤çš„é•œåƒä½œè€…
+    -c :ä½¿ç”¨DockerfileæŒ‡ä»¤æ¥åˆ›å»ºé•œåƒ
+    -m :æäº¤æ—¶çš„è¯´æ˜Žæ–‡å­—
+    -p :åœ¨commitæ—¶ï¼Œå°†å®¹å™¨æš‚åœ
 
-ÊµÀý:½«ÈÝÆ÷a404c6c174a2 ±£´æÎªÐÂµÄ¾µÏñ,²¢Ìí¼ÓÌá½»ÈËÐÅÏ¢ºÍËµÃ÷ÐÅÏ¢¡£
+å®žä¾‹:å°†å®¹å™¨a404c6c174a2 ä¿å­˜ä¸ºæ–°çš„é•œåƒ,å¹¶æ·»åŠ æäº¤äººä¿¡æ¯å’Œè¯´æ˜Žä¿¡æ¯ã€‚
 # docker commit -a "runoob.com" -m "my apache" a404c6c174a2  mymysql:v1 
 
 
 =====================================================================
-25. ÈÝÆ÷ÓëÖ÷»úÖ®¼äµÄÊý¾Ý¿½±´
+25. å®¹å™¨ä¸Žä¸»æœºä¹‹é—´çš„æ•°æ®æ‹·è´
 docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 
-OPTIONSËµÃ÷£º
-    -L :±£³ÖÔ´Ä¿±êÖÐµÄÁ´½Ó
+OPTIONSè¯´æ˜Žï¼š
+    -L :ä¿æŒæºç›®æ ‡ä¸­çš„é“¾æŽ¥
 
-ÊµÀý
-½«Ö÷»ú/www/runoobÄ¿Â¼¿½±´µ½ÈÝÆ÷96f7f14e99abµÄ/wwwÄ¿Â¼ÏÂ
+å®žä¾‹
+å°†ä¸»æœº/www/runoobç›®å½•æ‹·è´åˆ°å®¹å™¨96f7f14e99abçš„/wwwç›®å½•ä¸‹
 #docker cp /www/runoob 96f7f14e99ab:/www/
-½«Ö÷»ú/www/runoobÄ¿Â¼¿½±´µ½ÈÝÆ÷96f7f14e99abÖÐ£¬Ä¿Â¼ÖØÃüÃûÎªwww
+å°†ä¸»æœº/www/runoobç›®å½•æ‹·è´åˆ°å®¹å™¨96f7f14e99abä¸­ï¼Œç›®å½•é‡å‘½åä¸ºwww
 # docker cp /www/runoob 96f7f14e99ab:/www
-½«ÈÝÆ÷96f7f14e99abµÄ/wwwÄ¿Â¼¿½±´µ½Ö÷»úµÄ/tmpÄ¿Â¼ÖÐ
+å°†å®¹å™¨96f7f14e99abçš„/wwwç›®å½•æ‹·è´åˆ°ä¸»æœºçš„/tmpç›®å½•ä¸­
 # docker cp  96f7f14e99ab:/www /tmp/
 
 
 =====================================================================
-26. ¼ì²éÈÝÆ÷ÀïÎÄ¼þ½á¹¹µÄ¸ü¸Ä
+26. æ£€æŸ¥å®¹å™¨é‡Œæ–‡ä»¶ç»“æž„çš„æ›´æ”¹
 docker diff [OPTIONS] CONTAINER
 
-ÊµÀý: ²é¿´ÈÝÆ÷mymysqlµÄÎÄ¼þ½á¹¹¸ü¸Ä
+å®žä¾‹: æŸ¥çœ‹å®¹å™¨mymysqlçš„æ–‡ä»¶ç»“æž„æ›´æ”¹
 # docker diff mymysql
 
 

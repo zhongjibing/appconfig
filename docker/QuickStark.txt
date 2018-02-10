@@ -1,21 +1,21 @@
-CentOS Docker °²×°
+CentOS Docker å®‰è£…
 
-Docker ÔËĞĞÔÚ CentOS 7 ÉÏ£¬ÒªÇóÏµÍ³Îª64Î»¡¢ÏµÍ³ÄÚºË°æ±¾Îª 3.10 ÒÔÉÏ
+Docker è¿è¡Œåœ¨ CentOS 7 ä¸Šï¼Œè¦æ±‚ç³»ç»Ÿä¸º64ä½ã€ç³»ç»Ÿå†…æ ¸ç‰ˆæœ¬ä¸º 3.10 ä»¥ä¸Š
 
-°²×°docker
+å®‰è£…docker
 # yum -y install docker
 
-Æô¶¯dockerºóÌ¨·şÎñ
+å¯åŠ¨dockeråå°æœåŠ¡
 # service docker start
 
-²âÊÔÔËĞĞhello-world
+æµ‹è¯•è¿è¡Œhello-world
 # docker run hello-world
 
 
-¾µÏñ¼ÓËÙ
-ĞÂ°æµÄ Docker Ê¹ÓÃ /etc/docker/daemon.json£¨Linux£© »òÕß %programdata%\docker\config\daemon.json£¨Windows£© À´ÅäÖÃ Daemon¡£
+é•œåƒåŠ é€Ÿ
+æ–°ç‰ˆçš„ Docker ä½¿ç”¨ /etc/docker/daemon.jsonï¼ˆLinuxï¼‰ æˆ–è€… %programdata%\docker\config\daemon.jsonï¼ˆWindowsï¼‰ æ¥é…ç½® Daemonã€‚
 
-ÔÚ¸ÃÅäÖÃÎÄ¼şÖĞ¼ÓÈë(ÍøÒ×¾µÏñµØÖ·):
+åœ¨è¯¥é…ç½®æ–‡ä»¶ä¸­åŠ å…¥(ç½‘æ˜“é•œåƒåœ°å€):
 {
   "registry-mirrors": ["http://hub-mirror.c.163.com"]
 }
