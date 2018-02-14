@@ -1,0 +1,14 @@
+Install Docker Compose
+
+1. Run this command to download the latest version of Docker Compose:
+# curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+Use the latest Compose release number in the download command.
+The above command is an example, and it may become out-of-date. To ensure you have the latest version, check the Compose repository release page on GitHub. 
+https://github.com/docker/compose/releases
+
+2. Apply executable permissions to the binary:
+# chmod +x /usr/local/bin/docker-compose
+
+3. Test the installation.
+# docker-compose --version

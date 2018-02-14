@@ -1,0 +1,45 @@
+version: '2'
+services:
+  eureka:
+    container_name: eureka
+    image: java:8u111
+    network_mode: host
+    ports:
+      - 8761:8761
+    extra_hosts:
+      - polaris.localdomain:192.168.100.128
+    pid: host
+    volumes:
+      - /opt/springcluster/eureka-0.0.1-SNAPSHOT.jar:/opt/springcluster/eureka-0.0.1-SNAPSHOT.jar
+    command: java -jar /opt/springcluster/eureka-0.0.1-SNAPSHOT.jar
+
+
+  hera:
+    container_name: hera
+    image: java:8u111
+    network_mode: host
+    ports:
+      - 8888:8888
+    extra_hosts:
+      - polaris.localdomain:192.168.100.128
+    pid: host
+    volumes:
+      - /opt/springcluster/hera-0.0.1-SNAPSHOT.jar:/opt/springcluster/hera-0.0.1-SNAPSHOT.jar
+    command: java -jar /opt/springcluster/hera-0.0.1-SNAPSHOT.jar
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: mysql
+    image: mysql:5.6
+    network_mode: host
+    ports:
+      - 3306:3306
+    extra_hosts:
+      - polaris.localdomain:192.168.100.128
+    pid: host
+    volumes:
+      - /opt/springcluster/mysql_docker/conf:/etc/mysql/conf.d
+      - /opt/springcluster/mysql_docker/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
