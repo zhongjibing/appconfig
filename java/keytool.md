@@ -25,3 +25,8 @@ keytool -genkey -alias quercus -keyalg RSA -keysize 2048 -keystore quercus.p12 -
 > -keysize 表示密钥的长度  
 > -keystore 表示生成的密钥存放位置  
 > -validity 表示密钥的有效时间, 单位为天  
+
+## list entries
+```
+keytool -v -list -keystore icezhg.com.jks
+```
