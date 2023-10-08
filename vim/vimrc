@@ -6,6 +6,7 @@ set history=50
 set ru
 set tabstop=4
 set shiftwidth=4
+set scrolloff=3
 set cul
 set et
 set sc
@@ -23,4 +24,6 @@ set enc=utf-8
 set fenc=utf-8
 set fencs=utf-8,ucs-bom,latin1,gbk,gb2312,iso-8859-1,cp936
 set tenc=utf-8
+
+nnoremap <esc>^[ <esc>^[
 
