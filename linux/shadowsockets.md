@@ -30,7 +30,7 @@ alias sp='cap && cd /home/ubuntu/miniconda3/lib2 && sudo -E /home/ubuntu/minicon
 {
     "server": "0.0.0.0",
     "server_port": 121,
-    "password": "123456",
+    "password": "",
     "method": "aes-256-gcm"
 }
 ```
